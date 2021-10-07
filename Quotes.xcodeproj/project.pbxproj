@@ -16,6 +16,8 @@
 		D9AD01FF270E774E006D0E66 /* QuoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD01FE270E774E006D0E66 /* QuoteScreen.swift */; };
 		D9AD0202270E7AB9006D0E66 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD0201270E7AB9006D0E66 /* QuoteView.swift */; };
 		D9AD0206270E7C64006D0E66 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD0205270E7C64006D0E66 /* QuotesService.swift */; };
+		D9AD0209270E7EFA006D0E66 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD0208270E7EFA006D0E66 /* QuotesViewModel.swift */; };
+		D9AD020E270E88A6006D0E66 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD020D270E88A6006D0E66 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		D9AD01FE270E774E006D0E66 /* QuoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteScreen.swift; sourceTree = "<group>"; };
 		D9AD0201270E7AB9006D0E66 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		D9AD0205270E7C64006D0E66 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
+		D9AD0208270E7EFA006D0E66 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		D9AD020D270E88A6006D0E66 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,8 @@
 		D9AD01E6270E71EA006D0E66 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				D9AD020A270E885C006D0E66 /* Base */,
 				D9AD01F8270E73A9006D0E66 /* Feature */,
-				D9AD01F5270E7276006D0E66 /*  Constants */,
 				D9AD01E7270E71EA006D0E66 /* QuotesApp.swift */,
 				D9AD01E9270E71EA006D0E66 /* ContentView.swift */,
 				D9AD01EB270E71F5006D0E66 /* Assets.xcassets */,
@@ -98,6 +102,7 @@
 		D9AD01F9270E73C6006D0E66 /* _Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				D9AD0207270E7EE4006D0E66 /* ViewModel */,
 				D9AD0204270E7C47006D0E66 /* Service */,
 				D9AD0200270E7A8F006D0E66 /* Views */,
 				D9AD01FD270E7736006D0E66 /* Screen */,
@@ -136,6 +141,39 @@
 				D9AD0205270E7C64006D0E66 /* QuotesService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D9AD0207270E7EE4006D0E66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD0208270E7EFA006D0E66 /* QuotesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9AD020A270E885C006D0E66 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD020B270E887B006D0E66 /* Views */,
+				D9AD01F5270E7276006D0E66 /*  Constants */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D9AD020B270E887B006D0E66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD020C270E8883006D0E66 /* Loading */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9AD020C270E8883006D0E66 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD020D270E88A6006D0E66 /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +251,10 @@
 				D9AD0202270E7AB9006D0E66 /* QuoteView.swift in Sources */,
 				D9AD01FC270E7442006D0E66 /* Quote.swift in Sources */,
 				D9AD01EA270E71EA006D0E66 /* ContentView.swift in Sources */,
+				D9AD0209270E7EFA006D0E66 /* QuotesViewModel.swift in Sources */,
 				D9AD01E8270E71EA006D0E66 /* QuotesApp.swift in Sources */,
 				D9AD01F7270E7293006D0E66 /* APIConstants.swift in Sources */,
+				D9AD020E270E88A6006D0E66 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
